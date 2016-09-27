@@ -9,6 +9,8 @@
 $(function(){
 
 
+
+
     function resize(){
         //alert('js');
         /*获取屏幕宽度
@@ -45,6 +47,24 @@ $(function(){
     }
     /* 注册时间之后想要直接被触发可以用trigger */
     $(window).on('resize',resize).trigger('resize');
+    /*初始化tooltips插件*/
+    $('[data-toggle="tooltip"]').tooltip();
+
+    /*
+    控制标签页的标签宽度
+    */
+    var $ulContainer=$('.nav-tabs');
+    /*获取所有子元素宽度的和*/
+    var width=30;  //因为原本ul上面有padding-left
+    /*遍历子元素*/
+    console.log($ulContainer.children());
+    $ulContainer.children().each(function(index,element){
+        console.log(element.clientWidth);
+        console.log($(element).width());
+        width+=element.clientWidth;
+    });
+    /* 此时width等于所有LI宽度的总和*/
+    $ulContainer.css('width',width);
 
 
 });

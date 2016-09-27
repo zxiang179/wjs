@@ -252,17 +252,24 @@
       <section id="products">
 
           <div class="container">
+              <!--
+                  1 要给ul加一个容器 这个容器有横向滚动条
+                  2 动态设置ul的宽度 宽度是根据内容的大小决定的 width=sum(li.width)
+              -->
+
               <!--选项卡标题 Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#tab_1" role="tab" data-toggle="tab">特别推荐</a></li>
-                  <li role="presentation"><a href="#tab_2" role="tab" data-toggle="tab">微投资</a></li>
-                  <li role="presentation"><a href="#tab_3" role="tab" data-toggle="tab">微小宝</a></li>
-                  <li role="presentation"><a href="#tab_4" role="tab" data-toggle="tab">微消费</a></li>
-                  <li role="presentation"><a href="#tab_5" role="tab" data-toggle="tab">微增利</a></li>
-                  <li role="presentation"><a href="#tab_6" role="tab" data-toggle="tab">微金宝</a></li>
-                  <li role="presentation"><a href="#tab_7" role="tab" data-toggle="tab">微转让</a></li>
-                  <li class="pull-right"><a href="#">更多</a></li>
-              </ul>
+              <div class="ul-wapper">
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#tab_1" role="tab" data-toggle="tab">特别推荐</a></li>
+                      <li role="presentation"><a href="#tab_2" role="tab" data-toggle="tab">微投资</a></li>
+                      <li role="presentation"><a href="#tab_3" role="tab" data-toggle="tab">微小宝</a></li>
+                      <li role="presentation"><a href="#tab_4" role="tab" data-toggle="tab">微消费</a></li>
+                      <li role="presentation"><a href="#tab_5" role="tab" data-toggle="tab">微增利</a></li>
+                      <li role="presentation"><a href="#tab_6" role="tab" data-toggle="tab">微金宝</a></li>
+                      <li role="presentation"><a href="#tab_7" role="tab" data-toggle="tab">微转让</a></li>
+                      <li class="pull-right hidden-sm hidden-xs"><a href="#">更多</a></li>
+                  </ul>
+              </div>
 
               <!--所有选项卡内容 Tab panes -->
               <div class="tab-content">
@@ -272,22 +279,57 @@
                           <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="panel panel-czbk">
                                   <div class="panel-heading">
-                                      Panel heading without title
+                                      <p class="tooltips">
+                                          <a class="badge badge-one" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="北京市欢迎你"
+                                          >京</a>
+                                          <a class="badge badge-two" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="上海欢迎你哦"
+                                          >沪</a>
+                                      </p>
+                                      <p><strong>8</strong><sub>%</sub>
+                                          <br>
+                                          <span>年利率</span></p>
                                   </div>
                                   <div class="panel-body">
-                                      Panel content
+                                      <h4>新手体验表0008期</h4>
+                                      <div class="row col-xs-6 text-left">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-right">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-left">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-right">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
                                   </div>
                               </div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="panel panel-czbk active">
                                   <div class="panel-heading">
-                                      <p>
-                                          <strong>8</strong>
-                                          <sub>%</sub>
-                                          <br>
-                                          <span>年利率</span>
+                                      <p class="tooltips">
+                                          <a class="badge badge-one" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="北京市欢迎你"
+                                          >京</a>
+                                          <a class="badge badge-two" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="上海欢迎你哦"
+                                          >沪</a>
                                       </p>
+                                      <p><strong>8</strong><sub>%</sub>
+                                      <br>
+                                      <span>年利率</span></p>
                                   </div>
                                   <div class="panel-body">
                                       <h4>新手体验表0008期</h4>
@@ -313,10 +355,38 @@
                           <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="panel panel-czbk disabled">
                                   <div class="panel-heading">
-                                      Panel heading without title
+                                      <p class="tooltips">
+                                          <a class="badge badge-one" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="北京市欢迎你"
+                                          >京</a>
+                                          <a class="badge badge-two" href="#"
+                                             data-toggle="tooltip" data-placement="top"
+                                             title="上海欢迎你哦"
+                                          >沪</a>
+                                      </p>
+                                      <p><strong>8</strong><sub>%</sub>
+                                          <br>
+                                          <span>年利率</span></p>
                                   </div>
                                   <div class="panel-body">
-                                      Panel content
+                                      <h4>新手体验表0008期</h4>
+                                      <div class="row col-xs-6 text-left">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-right">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-left">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
+                                      <div class="row col-xs-6 text-right">
+                                          <p>起始金额</p>
+                                          <p><strong>1000.00</strong><sub>万</sub></p>
+                                      </div>
                                   </div>
                               </div>
                           </div>

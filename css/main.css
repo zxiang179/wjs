@@ -217,29 +217,33 @@ a:hover{
     padding:40px 0;
 }
 
-#products>.container>.nav-tabs{
+#products>.container>.ul-wapper{
+    overflow-x: scroll;
+}
+
+#products>.container>.ul-wapper>.nav-tabs{
     padding-left: 20px;
 }
 
-#products>.container>.nav-tabs>li{
+#products>.container>.ul-wapper>.nav-tabs>li{
 }
 
-#products>.container>.nav-tabs>li>a{
+#products>.container>.ul-wapper>.nav-tabs>li>a{
     font-size: 16px;
     color: #333;
 }
 
-#products>.container>.nav-tabs>li>a:hover{
+#products>.container>.ul-wapper>.nav-tabs>li>a:hover{
     border-color: transparent;
     background-color: transparent;
     color: #222;
 }
 
-#products>.container>.nav-tabs>li.active{
+#products>.container>.ul-wapper>.nav-tabs>li.active{
 
 }
 
-#products>.container>.nav-tabs>li.active>a{
+#products>.container>.ul-wapper>.nav-tabs>li.active>a{
 
     background-color: transparent;
     border: 0;
@@ -308,6 +312,10 @@ a:hover{
     position: relative;
 }
 
+.panel-czbk p{
+    margin-bottom: 0px;
+}
+
 .panel-czbk>.panel-heading::before
 ,.panel-czbk>.panel-heading::after
 {
@@ -344,9 +352,45 @@ a:hover{
 .panel-czbk > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ddd;
 }
+
+.panel-czbk>.panel-heading>p{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 48px;
+}
+.panel-czbk>.panel-heading>p>strong{
+    font-size: 36px;
+}
+
+.panel-czbk>.panel-heading>.tooltips{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 26px;
+}
+
 .panel-czbk > .panel-heading .badge {
-    color: #f5f5f5;
-    background-color: #333;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 3px;
+    margin: 2px;
+}
+
+.panel-czbk > .panel-heading .badge-one {
+    color: #E92322;
+    border-color: #E92322;
+}
+
+.panel-czbk > .panel-heading .badge-two {
+    color: #399;
+    border-color: #399;
+
 }
 
 
