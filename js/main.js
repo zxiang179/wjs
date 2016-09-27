@@ -86,7 +86,7 @@ $(function(){
 
     var $carousels=$('.carousel');
     var startX,endX;
-    var offset=50;
+    var offset=30;
     // 注册滑动时间
     $carousels.on('touchstart',function(e){
         startX=e.originalEvent.touches[0].clientX;
