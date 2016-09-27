@@ -217,6 +217,7 @@ a:hover{
     padding:40px 0;
 }
 
+
 #products>.container>.ul-wapper{
     overflow-x: scroll;
 }
@@ -260,6 +261,192 @@ a:hover{
 
 
 
+
+/*
+  新闻板块
+*/
+#news{
+    padding: 50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#news .news-title{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px dashed #c0c0c0;
+    position: relative;
+    margin-right: 10px;
+}
+
+#news .news-title::after{
+    content: ' ';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border:1px solid #c0c0c0;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+}
+
+/*字体图标*/
+.icon-new01:before{
+    content: '\e90e';
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-new02:before{
+    content: '\e90f';
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-new03:before{
+    content: '\e910';
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-new04:before{
+    content: '\e911';
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+#news .nav-pills a i{
+    font-size: 20px;
+}
+
+#news .tab-pane ul li{
+    margin-bottom: 5px;
+}
+
+@media(max-width: 768px){
+    #news .nav-stacked>li {
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+
+/*
+合作伙伴
+*/
+#hzhb{
+    padding: 30px 0;
+}
+#hzhb ul{
+    padding: 0px;
+    list-style: none;
+    width: 888px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#hzhb ul li{
+    float: left;
+    font-size: 50px;
+}
+
+#hzhb ul li a{
+    padding: 10px 23px;
+    font-size: 50px;
+}
+
+/*加号选择器 在两者之间插入虚线*/
+#hzhb ul li+li{
+    border-left: 1px dashed #e0e0e0;
+}
+
+
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+
+
+
+
+
+/*
+脚注区域
+*/
+#footer{
+    height: 40px;
+}
 
 /*测试*/
 /*#tese>.container>.row>div{
@@ -400,6 +587,9 @@ a:hover{
     background-color: #fff;
     border-color: #f5f5f5;
     margin-bottom: 0;
+    top:0;
+    width: 100%;
+
 }
 
 .navbar-itcast .navbar-brand {
